@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  gap: 5px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cell.active {
+  background-color: #4caf50;
+}
